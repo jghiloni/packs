@@ -59,7 +59,7 @@ func testStage(t *testing.T, when spec.G, it spec.S) {
 			{"CF_INSTANCE_IP", "", hostIPCmp},
 			{"CF_INSTANCE_PORT", "", nil},
 			{"CF_INSTANCE_PORTS", "[]", nil},
-			{"CF_STACK", "cflinuxfs2", nil},
+			{"CF_STACK", "cflinuxfs3", nil},
 			{"HOME", "/home/vcap", nil},
 			{"LANG", "en_US.UTF-8", nil},
 			{"MEMORY_LIMIT", fmt.Sprintf("%dm", *memory), nil},

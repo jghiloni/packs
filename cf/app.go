@@ -156,7 +156,7 @@ func (a *App) Stage() map[string]string {
 		"CF_INSTANCE_IP":          a.ip,
 		"CF_INSTANCE_PORT":        "",
 		"CF_INSTANCE_PORTS":       "[]",
-		"CF_STACK":                "cflinuxfs2",
+		"CF_STACK":                "cflinuxfs3",
 		"MEMORY_LIMIT":            fmt.Sprintf("%dm", limits["mem"]),
 		"VCAP_APPLICATION":        string(vcapApp),
 		"VCAP_SERVICES":           "{}",

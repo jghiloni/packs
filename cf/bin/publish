@@ -4,17 +4,17 @@ set -eo pipefail
 
 cd $(dirname "${BASH_SOURCE[0]}")/..
 
-docker tag packs/cflinuxfs2:latest packs/cf:latest
-docker tag packs/cflinuxfs2:build packs/cf:build
-docker tag packs/cflinuxfs2:run packs/cf:run
-docker tag packs/cflinuxfs2:export packs/cf:export
-docker tag packs/cflinuxfs2:network packs/cf:network
+docker tag packs/cflinuxfs3:latest packs/cf:latest
+docker tag packs/cflinuxfs3:build packs/cf:build
+docker tag packs/cflinuxfs3:run packs/cf:run
+docker tag packs/cflinuxfs3:export packs/cf:export
+docker tag packs/cflinuxfs3:network packs/cf:network
 
-docker push packs/cflinuxfs2:latest
-docker push packs/cflinuxfs2:build
-docker push packs/cflinuxfs2:run
-docker push packs/cflinuxfs2:export
-docker push packs/cflinuxfs2:network
+docker push packs/cflinuxfs3:latest
+docker push packs/cflinuxfs3:build
+docker push packs/cflinuxfs3:run
+docker push packs/cflinuxfs3:export
+docker push packs/cflinuxfs3:network
 
 docker push packs/cf:latest
 docker push packs/cf:build
@@ -22,4 +22,4 @@ docker push packs/cf:run
 docker push packs/cf:export
 docker push packs/cf:network
 
-docker push packs/cflinuxfs2-test
+docker push packs/cflinuxfs3-test
